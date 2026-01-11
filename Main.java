@@ -21,11 +21,20 @@ public class Main extends ApplicationAdapter {
     @Override
     public void render () {
         // musician plays - C, D, E
-        // if there's a note change.
+        // How can I get the ball to move every 1 second?
+        // How do we make the sprite stop?
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        x += 5;
+        if (x < 100) {
+            x += 5;
+        }
         shape.begin(ShapeRenderer.ShapeType.Filled);
         shape.circle(x, y, 50);
         shape.end();
+    }
+
+    main () {
+        while (true) {
+            render();
+        }
     }
 }

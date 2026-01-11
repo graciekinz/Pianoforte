@@ -2,7 +2,7 @@ enum MusicNote {
   C, Dflat, D, Eflat, E, F, Gflat, G, Aflat, A, Bflat, B;
 }
 
-public class Note() {
+public class Note {
   private int octave;
   MusicNote x;
 
@@ -13,7 +13,7 @@ public class Note() {
   }
 
   // constructor to initialize variables
-  public Note(MusicNote x, int octave) { 
+  public Note(MusicNote x, int octave) {
     this.x = x;
     this.octave = octave;
   }
@@ -34,11 +34,11 @@ public class Note() {
       case C:
         // play note at octave
         break;
-      
+
       default:
         // rest
         break;
     }
   }
-  
+
 }
